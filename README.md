@@ -1,5 +1,7 @@
 https://github.com/AI4Finance-Foundation/FinRobot.git
+
 https://github.com/AI4Finance-Foundation/FinRL_DeepSeek.git
+
 https://github.com/AI4Finance-Foundation/FinEmotion.git
 
 Pipe Line :
