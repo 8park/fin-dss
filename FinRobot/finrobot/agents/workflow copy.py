@@ -467,10 +467,3 @@ class MultiAssistantWithLeader(MultiAssistantBase):
                 ),
             )
         return leader
-
-def create_strategy_workflow(role: str, market_state: dict) -> dict:
-    """
-    Replacement for Autogen workflow: generate a strategy via local LLaMA.
-    """
-    from finrobot.functional.llm_wrapper import generate_strategy_llama
-    return generate_strategy_llama(role, market_state)

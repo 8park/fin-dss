@@ -19,9 +19,8 @@ import os
 import subprocess
 import sys
 from finemotion.emotion import get_sentiment  # FinEmotion
+from finrobot.functional.llm_wrapper import generate_strategy_llama
 
-# Paths to module entry scripts
-FINROBOT_SCRIPT = os.path.join('FinRobot', 'experiments', 'multi_factor_agents.py')
 FINRL_SCRIPT     = os.path.join('FinRL_llm', 'train_ppo_llm.py')
 
 
@@ -29,15 +28,15 @@ def generate_strategy(role: str, state_path: str, out_path: str) -> None:
     """
     Call FinRobot workflow to generate strategy JSON at out_path.
     """
-    cmd = [
-        sys.executable,
-        FINROBOT_SCRIPT,
-        '--role', role,
-        '--state-file', state_path,
-        '--output', out_path
-    ]
-    logging.info(f"Generating strategy: {' '.join(cmd)}")
-    subprocess.run(cmd, check=True)
+    # Load market state
+    with open(state_path, 'r') as f:
+        market_state = json.load(f)
+    # Generate strategy via local LLaMA
+    strategy = generate_strategy_llama(role, market_state)
+    logging.info(f"Generated strategy: {strategy}")
+    # Save strategy JSON
+    with open(out_path, 'w') as f:
+        json.dump(strategy, f, indent=4)
 
 
 def adjust_strategy(path: str, alpha: float, text_path: str) -> None:
@@ -114,4 +113,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

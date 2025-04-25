@@ -119,30 +119,3 @@ quant_task = "Develop and test the feasibility of a quantitative investment stra
 
 with Cache.disk() as cache:
     executor.initiate_chat(group_leader, message=quant_task, cache=cache)
-
-#!/usr/bin/env python3
-import argparse
-import json
-from finrobot.functional.llm_wrapper import generate_strategy_llama
-
-def main():
-    parser = argparse.ArgumentParser(description="Generate trading strategy via local LLaMA")
-    parser.add_argument("--role", required=True, help="Investor role identifier")
-    parser.add_argument("--state-file", required=True, help="Path to market state JSON")
-    parser.add_argument("--output", required=True, help="Path to write strategy JSON")
-    args = parser.parse_args()
-
-    # Load market state
-    with open(args.state_file, 'r') as f:
-        market_state = json.load(f)
-
-    # Generate strategy
-    strategy = generate_strategy_llama(role=args.role, market_state=market_state)
-    print(f"Generated strategy: {strategy}")
-
-    # Save to output file
-    with open(args.output, 'w') as f:
-        json.dump(strategy, f, indent=4)
-
-if __name__ == "__main__":
-    main()

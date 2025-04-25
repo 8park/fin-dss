@@ -49,7 +49,8 @@ RUN pip install --no-cache-dir \
 RUN mamba install -y -c conda-forge \
         box2d-py mpi4py datasets huggingface_hub alpaca-py \
         selenium webdriver-manager gymnasium \
-        matplotlib yfinance tqdm scikit-learn tensorboard
+        matplotlib yfinance tqdm scikit-learn \
+        tensorboard accelerate transformers
 
 # ── PYTHONPATH 설정 ────────────────────────────────────────────
 ENV PYTHONPATH="/workspace/FinRL"
