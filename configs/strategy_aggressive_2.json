@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_aggressive_2",
+  "company": "AMD",
+  "strategy_summary": "Aggressive strategy (15% bonds, 75% stocks, 10% cash)",
+  "financial_ratios": {
+    "roe": 0.35,
+    "eps": 3.5
+  },
+  "sentiment_score": 0.58,
+  "risk_score": 0.68
+}

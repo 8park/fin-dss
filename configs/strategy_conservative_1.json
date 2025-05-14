@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_conservative_1",
+  "company": "AAPL",
+  "strategy_summary": "Conservative strategy (60% bonds, 30% stocks, 10% cash)",
+  "financial_ratios": {
+    "roe": 0.32,
+    "eps": 5.4
+  },
+  "sentiment_score": 0.15,
+  "risk_score": 0.2
+}

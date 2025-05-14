@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_aggressive_1",
+  "company": "TSLA",
+  "strategy_summary": "Aggressive strategy (20% bonds, 70% stocks, 10% cash)",
+  "financial_ratios": {
+    "roe": 0.22,
+    "eps": 2.8
+  },
+  "sentiment_score": 0.65,
+  "risk_score": 0.75
+}

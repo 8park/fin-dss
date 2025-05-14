@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_aggressive_3",
+  "company": "COIN",
+  "strategy_summary": "Aggressive strategy (10% bonds, 80% stocks, 10% cash)",
+  "financial_ratios": {
+    "roe": 0.18,
+    "eps": 1.2
+  },
+  "sentiment_score": 0.72,
+  "risk_score": 0.82
+}

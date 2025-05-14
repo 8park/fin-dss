@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_conservative_3",
+  "company": "GOOGL",
+  "strategy_summary": "Conservative strategy (50% bonds, 40% stocks, 10% cash)",
+  "financial_ratios": {
+    "roe": 0.28,
+    "eps": 4.8
+  },
+  "sentiment_score": 0.12,
+  "risk_score": 0.25
+}

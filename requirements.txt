@@ -1,0 +1,15 @@
+pandas==2.2.0
+numpy==1.26.0
+matplotlib==3.8.0
+yfinance==0.2.37
+stable-baselines3==2.3.2
+beautifulsoup4==4.12.3
+langchain==0.1.14
+scikit-learn==1.4.2
+seaborn==0.13.2
+praw==7.7.1
+sec-api==1.0.18
+pytest==8.0.0
+black==24.1.1
+flake8==7.0.0
+pylint==3.0.3 

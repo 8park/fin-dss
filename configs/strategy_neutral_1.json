@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_neutral_1",
+  "company": "AMZN",
+  "strategy_summary": "Neutral strategy (40% bonds, 50% stocks, 10% cash)",
+  "financial_ratios": {
+    "roe": 0.25,
+    "eps": 3.2
+  },
+  "sentiment_score": 0.35,
+  "risk_score": 0.45
+}

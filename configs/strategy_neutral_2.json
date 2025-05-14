@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_neutral_2",
+  "company": "META",
+  "strategy_summary": "Neutral strategy (35% bonds, 55% stocks, 10% cash)",
+  "financial_ratios": {
+    "roe": 0.3,
+    "eps": 4.5
+  },
+  "sentiment_score": 0.42,
+  "risk_score": 0.48
+}

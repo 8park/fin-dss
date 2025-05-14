@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_conservative_2",
+  "company": "MSFT",
+  "strategy_summary": "Conservative strategy (55% bonds, 35% stocks, 10% cash)",
+  "financial_ratios": {
+    "roe": 0.35,
+    "eps": 6.2
+  },
+  "sentiment_score": 0.18,
+  "risk_score": 0.22
+}

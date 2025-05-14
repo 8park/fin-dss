@@ -1,0 +1,11 @@
+{
+  "strategy_id": "strategy_neutral_3",
+  "company": "NVDA",
+  "strategy_summary": "Neutral strategy (30% bonds, 60% stocks, 10% cash)",
+  "financial_ratios": {
+    "roe": 0.45,
+    "eps": 8.2
+  },
+  "sentiment_score": 0.38,
+  "risk_score": 0.52
+}
